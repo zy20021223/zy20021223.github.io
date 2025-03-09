@@ -240,6 +240,7 @@
       window.addEventListener("click", function () {
         _music.play();
       });
+      window.addEventListener('touchstart', handleTap, { passive: false }); 
       var settings = {
         particles: {
           length: 500, // maximum amount of particles
