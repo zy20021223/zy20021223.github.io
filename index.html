@@ -237,9 +237,10 @@
 
       //   _music.play();
       // }
-      window.addEventListener("click", function () {
+      function handleTap() {
         _music.play();
-      });
+      }
+      window.addEventListener("click", handleTap);
       window.addEventListener('touchstart', handleTap, { passive: false }); 
       var settings = {
         particles: {
