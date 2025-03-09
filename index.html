@@ -233,10 +233,13 @@
        */
       let music_url = "http://music.163.com/song/media/outer/url?id=29750751.mp3";
       let _music = new Audio(music_url);
-      window.onclick = function() {
+      // window.onclick = function() {
 
+      //   _music.play();
+      // }
+      window.addEventListener("click", function () {
         _music.play();
-      }
+      });
       var settings = {
         particles: {
           length: 500, // maximum amount of particles
